@@ -148,3 +148,47 @@ img:hover {
     display: block;
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 8px 10px;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 5px;
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .photo-container img {
+        border-radius: 5px;
+    }
+
+    .hover-button {
+        font-size: 8px;
+        padding: 3px 5px;
+    }
+}
